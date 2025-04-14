@@ -1,0 +1,165 @@
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+
+
+
+.navbar {
+    background-color: #d55c00;
+    color: rgb(77, 76, 76);
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 1.125rem;
+    
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    color: rgb(255, 160, 101);
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+/* Optional: hover effect */
+.navbar a:hover {
+    background-color: #c55500;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 2rem;
+    color: rgb(222, 222, 222);
+
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.text-section {
+    flex: 1;
+    margin: 5rem 3rem;
+    margin-right: 100px;
+}
+
+.image-section {
+    height: 600px;
+}
+
+
+/* Optional styling */
+h2 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1em;
+}
+.icon-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 3rem;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+
+.icon-list img {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.icon-list span {
+    flex-grow: 1;
+}
+.title-section {
+    align-content: center;
+}
+
+.container-experience {
+    padding: 5rem 10rem;
+    background-color: rgb(255, 245, 236);
+}
+
+.container-experience h2 {
+text-transform: uppercase;
+text-align: center;
+}
+
+.container-hobbies {
+    display: flex;
+    padding: 10% 20%;
+    gap: 30px;
+}
+.image-hobbies {
+    flex: 0 0 40%;
+    margin-right: 20px;
+}
+.image-hobbies img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.text-hobbies h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.label {
+    color: #333;
+}
+
