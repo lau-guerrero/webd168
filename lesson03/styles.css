@@ -11,7 +11,7 @@ body {
 
 .container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: 60px auto;
     padding: 0 20px;
 }
 
@@ -69,4 +69,27 @@ body {
 
 .card a:hover {
     opacity: 0.9;
+}
+
+
+footer {
+    background-color: #d55c00;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.email-link {
+    color: rgb(255, 160, 101);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.email-link:hover {
+    border-bottom-color: currentColor;
 }
