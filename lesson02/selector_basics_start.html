@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Selector Basics</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+    />
+    <style>
+      body {
+        background-color: rgb(50, 122, 167);
+        padding: 0 20px 20px 20px;
+        margin: 0;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1em; /*fz1em*/
+        font-family: "Varela Round", Arial, Helvetica, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: rgb(255, 255, 255); /*c:rgb*/
+        font-family: Arial, "Palatino Linotype", Times, serif;
+        border-block-start: 2px solid rgb(87, 185, 178); /*bb2-solid-rgb*/
+        padding-top: 10px; /*pt10*/
+        padding-bottom: 5px; /*pb5*/
+      }
+
+      h1 {
+        font-size: 2em; /*fz2em*/
+      }
+
+      #logo {
+        font-family: Baskerville, Palatino, sans-serif;
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.8);
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: rgb(191, 91, 116);
+        border-radius: 0 0 10px 10px; /*bdrs0-0-10-10*/
+        padding: 10px;
+      }
+
+      .note {
+        color: #000;
+        border: 2px solid white;
+        background-color: rgb(69, 189, 102);
+        margin-top: 25px;
+        margin-bottom: 35px;
+        padding: 20px;
+      }
+
+      .note strong {
+        color: #fc6512;
+      }
+
+      article {
+        max-width: 760px; /*maw760*/
+        margin: 0 auto;
+      }
+
+      h1 + p {
+        color: rgb(255, 255, 255);
+        font-size: 1.2em;
+        line-height: 140%; /*lh140%*/
+      }
+
+      a[title] {
+        color: green;
+      }
+
+      article > h3:nth-child(10) {
+        font-style: italic;
+      }
+
+      .notme {
+        color: burlywood;
+        text-decoration: underline double;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+      .is :is(h3, strong, i) {
+        color: rgb(216, 226, 9);
+      }
+
+      .where :where(h3, strong, i) {
+        color: rgb(9, 201, 226);
+      }
+
+      .has:has(i) {
+        background: orange;
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <header><div id="logo">CSS: The Missing Manual</div></header>
+
+    <article>
+      <!-- The article element is intended to present an independent entry that could stand on its own. -->
+      <h1>The Amazing World of CSS</h1>
+      <p>
+        <strong
+          ><a title="green" href="/en-US/docs/Glossary/CSS">CSS</a></strong
+        >
+        (Cascading Style Sheets) allows you to create great-looking web pages.
+        Cascading Style Sheets (CSS) is a style sheet language used for
+        describing the presentation of a document written in a markup language
+        such as HTML. CSS is a cornerstone technology of the World Wide Web,
+        alongside HTML and JavaScript.
+      </p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?
+      </p>
+      <p class="note">
+        <strong>NOTE:</strong> Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+        commodi consequatur?
+      </p>
+
+      <h2>Who Knew CSS Had Such Power?</h2>
+      <p>
+        Separation of formatting and content also makes it feasible to present
+        the same markup page in different styles for different rendering
+        methods, such as on-screen, in print, by voice (via speech-based browser
+        or screen reader), and on Braille-based tactile devices. CSS also has
+        rules for alternate formatting if the content is accessed on a mobile
+        device.
+      </p>
+      <p class="note">
+        <strong>NOTE:</strong> Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+        commodi consequatur?
+      </p>
+
+      <h3 class="notme">Not Me!</h3>
+      <p>
+        I'm feeling a lot more comfortable using CSS to style webpages,
+        especially after going through Chapter 3 of CSS: The Missing Manual. It
+        really helped me get how selectors, classes, and IDs work. I liked how
+        the book explained which styles get applied when there’s a conflict—it
+        cleared up a lot of confusion, specially with pseudo-classes and the The
+        HTML Family Tree. Playing around with the code while I read made a big
+        difference too.
+      </p>
+
+      <h3>Me Neither!</h3>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+        corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+        quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?
+      </p>
+    </article>
+    <article>
+      <h2>Pseudo-classes :is() :where() :has()</h2>
+      <div class="is">
+        <h3>:is()</h3>
+        <p>
+          Lorem ipsum dolor sit amet
+          <strong>consectetur adipisicing elit.</strong> Culpa repellat ipsa
+          quod ratione dolores adipisci numquam? Voluptas cupiditate porro illum
+          ratione reiciendis veniam quasi nulla impedit, error omnis,
+          <i>natus accusantium. </i>
+        </p>
+      </div>
+      <div class="where">
+        <h3>:where()</h3>
+        <p>
+          Lorem ipsum dolor sit amet
+          <strong>consectetur adipisicing elit.</strong> Culpa repellat ipsa
+          quod ratione dolores adipisci numquam? Voluptas cupiditate porro illum
+          ratione reiciendis veniam quasi nulla impedit, error omnis,
+          <i>natus accusantium. </i>
+        </p>
+      </div>
+
+      <div>
+        <h3>:has()</h3>
+        <p class="has">
+          Lorem ipsum dolor sit amet
+          <strong>consectetur adipisicing elit.</strong> Culpa repellat ipsa
+          quod ratione dolores adipisci numquam? Voluptas cupiditate porro illum
+          ratione reiciendis veniam quasi nulla impedit, error omnis,
+          <i>natus accusantium. </i>
+        </p>
+        <p class="has">
+          Lorem ipsum dolor sit amet
+          <strong>consectetur adipisicing elit.</strong> Culpa repellat ipsa
+          quod ratione dolores adipisci numquam? Voluptas cupiditate porro illum
+          ratione reiciendis veniam quasi nulla impedit, error omnis, natus
+          accusantium.
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
