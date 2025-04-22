@@ -196,6 +196,9 @@ button:hover {
       width: 90%;
       padding: 15px;
   }
+  .main-menu a {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -212,5 +215,6 @@ button:hover {
     font-size: 1rem; /* Adjusts button text size */
     padding: 8px 16px; /* Reduces button padding */
   }
+
 }
 
