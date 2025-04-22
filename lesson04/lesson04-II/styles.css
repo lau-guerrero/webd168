@@ -47,7 +47,7 @@ body {
 .card img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
 }
 
 /* Styling for the "Learn More" button */
@@ -106,5 +106,12 @@ body {
 
     .card {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .learn-more-btn {
+        width: 50%;
+        margin: 0 auto;
     }
 }
