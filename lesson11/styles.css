@@ -1,0 +1,78 @@
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+}
+
+.custom-navbar {
+  background-color: #d55c00 !important;
+}
+.custom-navbar a {
+  color: rgb(255, 160, 101) !important;
+}
+.custom-navbar a:hover {
+  background-color: #c55500 !important;
+}
+
+.icon-list li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+.icon-list li img {
+  margin-right: 15px;
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.hover-image {
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hover-image:hover {
+    opacity: 1;
+}
+
+.hero-image {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.icon-grid .icon-item {
+  text-align: center;
+}
+.icon-grid .icon-item .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #d55c00;
+  padding: 20px;
+  text-align: center;
+}
+footer .social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: opacity 0.3s;
+}
+footer .social-links a:hover {
+  opacity: 0.7;
+}
+
