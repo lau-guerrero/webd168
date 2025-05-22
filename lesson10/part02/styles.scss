@@ -1,0 +1,90 @@
+// Variables for consistent theming
+$primary-color: #d55c00;
+$secondary-color: #c55500;
+$icon-color: rgb(255, 160, 101);
+$grid-gap: 20px;
+$icon-size: 50px;
+
+// Base styles
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0 auto;
+}
+
+// Custom navbar styles
+.custom-navbar {
+    background-color: $primary-color !important;
+    
+    a {
+        color: $icon-color !important;
+        
+        &:hover {
+            background-color: $secondary-color !important;
+        }
+    }
+}
+
+// Icon list styles
+.icon-list {
+    li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+        transition: background-color 0.3s ease;
+        
+        img {
+            margin-right: 15px;
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+}
+
+// Hero image styles
+.hero-image {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+// Icon grid styles
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: $grid-gap;
+    padding: $grid-gap;
+    
+    .icon-item {
+        text-align: center;
+        
+        .icon {
+            width: $icon-size;
+            height: $icon-size;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Footer styles
+footer {
+    background-color: $primary-color;
+    padding: 20px;
+    text-align: center;
+    
+    .social-links {
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: opacity 0.3s;
+            
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
