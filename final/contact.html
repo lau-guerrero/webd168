@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Laura - Graphic Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-50 min-h-screen font-sans">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      <nav
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="font-bold text-xl text-primary-color">Laura Designs</div>
+
+        <button
+          id="menu-btn"
+          aria-label="Toggle menu"
+          class="md:hidden focus:outline-none"
+        >
+          <svg
+            class="w-8 h-8 text-primary-color"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <ul
+          id="menu"
+          class="hidden md:flex space-x-8 text-lg text-primary-color"
+        >
+          <li>
+            <a
+              href="index.html"
+              class="hover:text-secondary-color transition-colors"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="about.html"
+              class="hover:text-secondary-color transition-colors"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="hover:text-secondary-color transition-colors font-semibold"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-24 max-w-4xl mx-auto px-4 py-16">
+      <h1 class="text-4xl font-bold text-primary-color mb-10">Get In Touch</h1>
+      <p class="mb-8 text-gray-700 text-lg leading-relaxed max-w-prose">
+        Whether you want to start a new project, collaborate, or just say hello,
+        feel free to reach out! I’m always excited to connect with fellow
+        creatives and businesses who value design.
+      </p>
+      <form
+        class="space-y-6 bg-white rounded-lg shadow-md p-8"
+        action="#"
+        method="POST"
+      >
+        <label class="block">
+          <span class="text-gray-700 font-semibold mb-2 block">Your Name</span>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-primary-color transition-colors text-lg"
+          />
+        </label>
+        <label class="block">
+          <span class="text-gray-700 font-semibold mb-2 block">Your Email</span>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-primary-color transition-colors text-lg"
+          />
+        </label>
+        <label class="block">
+          <span class="text-gray-700 font-semibold mb-2 block">Message</span>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:border-primary-color transition-colors text-lg resize-none"
+          ></textarea>
+        </label>
+        <button
+          type="submit"
+          class="bg-primary-color text-white font-semibold px-8 py-4 rounded-md hover:bg-secondary-color transition-colors text-lg w-full"
+        >
+          Send Message
+        </button>
+      </form>
+    </main>
+    <footer class="bg-orange-600 text-white py-10 mt-16">
+      <div
+        class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0"
+      >
+        <!-- Left: Brand & copyright -->
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-bold mb-2">Laura Designs</h2>
+          <p class="text-sm">&copy; 2025 Laura. All rights reserved.</p>
+        </div>
+
+        <!-- Middle: Quick Links -->
+        <nav class="flex space-x-6 text-lg">
+          <a
+            href="index.html"
+            class="hover:text-secondary-color transition-colors"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="hover:text-secondary-color transition-colors"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="hover:text-secondary-color transition-colors"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Right: Social Icons -->
+        <div class="flex space-x-6 text-2xl">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            class="hover:text-secondary-color transition-colors"
+          >
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-6 h-6"
+              aria-hidden="true"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14.86 4.48 4.48 0 001.98-2.48 9.03 9.03 0 01-2.85 1.08 4.52 4.52 0 00-7.7 4.12 12.82 12.82 0 01-9.3-4.7 4.52 4.52 0 001.4 6.04A4.46 4.46 0 012 9.7v.06a4.52 4.52 0 003.63 4.44 4.52 4.52 0 01-2.04.08 4.53 4.53 0 004.22 3.14A9.05 9.05 0 012 19.54a12.7 12.7 0 006.9 2.02c8.28 0 12.81-6.88 12.81-12.84 0-.2 0-.42-.02-.62A9.22 9.22 0 0023 3z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            class="hover:text-secondary-color transition-colors"
+          >
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-6 h-6"
+              aria-hidden="true"
+            >
+              <path
+                d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.3c-1 0-1.7-.7-1.7-1.6 0-.9.7-1.6 1.7-1.6s1.7.7 1.7 1.6c0 .9-.7 1.6-1.7 1.6zm13.5 10.3h-3v-4.8c0-1.2-.4-2-1.4-2-0.8 0-1.2.5-1.4 1-.1.3-.1.7-.1 1.1v4.7h-3v-9h3v1.2c.4-.6 1-1.5 2.5-1.5 1.8 0 3.2 1.2 3.2 3.8v5.5z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            class="hover:text-secondary-color transition-colors"
+          >
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-6 h-6"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 0c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.6-1.4-2-1.4-2-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 .1 1.6-.7 1.9-1.1.1-.7.4-1.1.7-1.4-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.3-3.3-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 3 .1 3.3.8 1 1.3 2 1.3 3.3 0 4.5-2.7 5.5-5.3 5.8.4.3.7 1 .7 2v3c0 .3.2.7.8.6 4.8-1.6 8.2-6 8.2-11.4 0-6.6-5.4-12-12-12z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle script
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

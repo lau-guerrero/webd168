@@ -1,0 +1,75 @@
+// Variables for colors (Tailwind orange-600 and amber-500)
+$primary-color: #ea580c; // Orange 600
+$secondary-color: #f59e0b; // Amber 500
+$background-color: #f7fafc; // Light gray background
+$text-color: #2d3748; // Dark slate gray text
+
+// Base styles
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem; // Base font size for rem scaling (16px)
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+// Links
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+  }
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+footer {
+    background-color: $primary-color;
+}
+
+
+
+// Responsive typography (mobile-first)
+h1 {
+  font-size: 2.5rem; // 40px
+
+  @media (min-width: 768px) {
+    font-size: 3.75rem; // 60px
+  }
+}
+
+h2 {
+  font-size: 1.875rem; // 30px
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem; // 40px
+  }
+}
+
+p {
+  font-size: 1rem; // 16px
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem; // 18px
+  }
+}
+
+// Container max width for layouts
+.max-w-7xl {
+  max-width: 80rem; // 1280
+}
+
